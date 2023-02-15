@@ -1,0 +1,33 @@
+/* Set background color for the page */
+body {
+  background-color: #f7f7f7;
+}
+
+/* Style for the cat list */
+.cat-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cat-item {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cat-attributes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.cat-attributes li {
+  margin: 0;
+  padding: 5px 0;
+  color: #555;
+}

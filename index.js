@@ -11,11 +11,32 @@ app.get("/cats", (req, res) => {
   const catData = require("./cat-names.json");
 
   // Generate an HTML unordered list with sub-lists for each cat's attributes
-  let html = '<ul class="cat-list">';
+  let html = `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Cat List</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+      <body>
+        <ul class="cat-list">
+  `;
   catData.forEach(cat => {
-    html += `<li class="cat-item">${cat.name}<ul class="cat-attributes"><li>Size: ${cat.size}</li><li>Color: ${cat.color}</li></ul></li>`;
+    html += `
+          <li class="cat-item">${cat.name}
+            <ul class="cat-attributes">
+              <li>Size: ${cat.size}</li>
+              <li>Color: ${cat.color}</li>
+            </ul>
+          </li>
+    `;
   });
-  html += "</ul>";
+  html += `
+        </ul>
+      </body>
+    </html>
+  `;
 
   // Send the HTML back to the client as a response
   res.send(html);

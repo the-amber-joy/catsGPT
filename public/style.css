@@ -1,6 +1,6 @@
 /* Set background color for the page */
 body {
-  background-color: #f7f7f7;
+  background-color: #333;
 }
 
 /* Style for the cat list */
@@ -13,13 +13,13 @@ body {
 .cat-item {
   margin: 0;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
-  font-size: 28px;
+  border-bottom: 1px solid #eee;
+  font-size: 24px;
   font-weight: bold;
-  color: #FF6F61;
+  color: #fff;
   position: relative;
   cursor: pointer;
-  transform: skewX(-20deg);
+  transform: skewX(-10deg);
   overflow: hidden;
   transition: transform 0.3s ease-out;
 }
@@ -30,11 +30,11 @@ body {
   left: -10px;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
-  width: 40px;
-  height: 40px;
-  background-color: #FF6F61;
+  width: 30px;
+  height: 30px;
+  background-color: #FF6663;
   border-radius: 50%;
-  box-shadow: 0 0 5px #FF6F61;
+  box-shadow: 0 0 5px #FF6663;
   transition: transform 0.3s ease-out;
 }
 
@@ -42,29 +42,29 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .cat-attributes li {
   margin: 0;
   padding: 5px 0;
-  color: #fff;
+  color: #f4f4f4;
+  display: none;
 }
 
 /* Hover styles for the cat item */
 .cat-item:hover {
-  color: #fff;
-  background-color: #FF6F61;
+  color: #FF6663;
+  background-color: #f4f4f4;
   transform: skewX(0deg);
 }
 
 .cat-item:hover:before {
-  transform: translateY(-50%) rotate(-45deg) scale(2);
+  transform: translateY(-50%) rotate(-45deg) scale(1.5);
 }
 
 .cat-item:hover .cat-attributes li {
-  text-shadow: 1px 1px #fff, -1px -1px #fff;
-  animation: shake 0.5s ease-out infinite;
+  display: block;
 }
 
 /* Animation for the cat attribute items */

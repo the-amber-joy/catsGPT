@@ -6,7 +6,7 @@ const port = 3000;
 app.use(express.static("public"));
 
 // Endpoint to return an HTML unordered list of cat names with attributes from a JSON file
-app.get("/cats", (req, res) => {
+app.get("/", (req, res) => {
   // Load the JSON file with cat data
   const catData = require("./cat-names.json");
 

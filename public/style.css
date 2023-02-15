@@ -1,6 +1,6 @@
-/* Set background color for the page */
+/* Set rainbow gradient background color for the page */
 body {
-  background-color: #333;
+  background: linear-gradient(to bottom, #e60073, #ff8c00, #ffee00, #008000, #0000ff, #4b0082, #9400d3);
 }
 
 /* Style for the cat list */

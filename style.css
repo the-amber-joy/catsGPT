@@ -1,0 +1,33 @@
+.cat-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.cat-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #FFDAB9;
+}
+
+.cat-item:hover {
+  background-color: #FFE4B5;
+}
+
+.cat-attributes {
+  margin: 10px 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: smaller;
+}
+
+.cat-attributes li:before {
+  content: ' - ';
+}
+
+.cat-attributes li:first-child:before {
+  content: '';
+}

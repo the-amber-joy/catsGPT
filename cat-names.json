@@ -1,1 +1,8 @@
-["Whiskers", "Fluffy", "Mittens", "Snowball", "Tiger", "Socks"]
+[
+  { "name": "Whiskers", "size": "small", "color": "gray" },
+  { "name": "Fluffy", "size": "medium", "color": "white" },
+  { "name": "Mittens", "size": "small", "color": "black" },
+  { "name": "Snowball", "size": "large", "color": "white" },
+  { "name": "Tiger", "size": "medium", "color": "orange" },
+  { "name": "Socks", "size": "small", "color": "gray" }
+]

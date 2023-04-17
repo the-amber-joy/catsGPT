@@ -1,25 +1,6 @@
-html,
+/* Set rainbow gradient background color for the page */
 body {
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  background: linear-gradient(
-    to bottom right,
-    rgba(252, 191, 73, 0.8),
-    rgba(253, 203, 110, 0.8),
-    rgba(236, 174, 110, 0.8),
-    rgba(234, 169, 110, 0.8),
-    rgba(221, 136, 114, 0.8),
-    rgba(220, 112, 110, 0.8),
-    rgba(201, 104, 122, 0.8),
-    rgba(185, 114, 134, 0.8),
-    rgba(160, 130, 149, 0.8),
-    rgba(120, 137, 157, 0.8),
-    rgba(82, 137, 157, 0.8),
-    rgba(41, 128, 145, 0.8)
-  );
+  background: linear-gradient(to bottom, #e60073, #ff8c00, #ffee00, #008000, #0000ff, #4b0082, #9400d3);
 }
 
 /* Style for the cat list */
@@ -51,9 +32,9 @@ body {
   transform: translateY(-50%) rotate(-45deg);
   width: 20px;
   height: 20px;
-  background-color: #ff6663;
+  background-color: #FF6663;
   border-radius: 50%;
-  box-shadow: 0 0 5px #ff6663;
+  box-shadow: 0 0 5px #FF6663;
   transition: transform 0.3s ease-out;
 }
 
@@ -73,7 +54,7 @@ body {
 
 /* Hover styles for the cat item */
 .cat-item:hover {
-  color: #ff6663;
+  color: #FF6663;
   background-color: #f4f4f4;
   transform: skewX(0deg);
 }

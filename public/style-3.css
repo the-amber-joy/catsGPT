@@ -1,0 +1,60 @@
+/* Set background color for the page */
+body {
+  background-color: #f7f7f7;
+}
+
+/* Style for the cat list */
+.cat-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cat-item {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 28px;
+  font-weight: bold;
+  color: #7f5fc5;
+  position: relative;
+}
+
+.cat-item:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #7f5fc5;
+  border-radius: 50%;
+}
+
+.cat-attributes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+.cat-attributes li {
+  margin: 0;
+  padding: 5px 0;
+  color: #555;
+}
+
+/* Hover styles for the cat item */
+.cat-item:hover {
+  color: #fff;
+  background-color: #7f5fc5;
+}
+
+.cat-item:hover:before {
+  background-color: #fff;
+}
+
+.cat-item:hover .cat-attributes li {
+  color: #fff;
+}
